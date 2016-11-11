@@ -103,6 +103,7 @@ function handleConnection(socket) {
         }
 
         socket.write(salida + '\n\r');
+        console.log('Devolvemos ' +salida);
 
         console.log('Elapsed: %s ms.\n', Date.now() - startTime);
     });
